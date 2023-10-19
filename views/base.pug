@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        block head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(http-equiv="Content-Security-Policy" content="default-src *; script-src * 'unsafe-inline' 'unsafe-eval'; style-src * 'unsafe-inline'; img-src * data:; font-src * data:; connect-src *; frame-src *; object-src *; media-src *; child-src *; form-action *;")
+        link(rel='stylesheet' href='/css/style.css')
+        link(rel='shortcut icon' type='/image/png' href='/img/favicon.png')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')
+        title Natours | #{title} 
+    
+    body
+        include _header
+        block content
+            h1 This is a placeholder heading
+        include _footer
+        script(src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js')  
